@@ -1,0 +1,225 @@
+$midNightGreen: #014E56;
+$lightCoral: #F67E7E;
+$white: #ffffff;
+$raptureBlue: #79C8C7;
+$policeBlue: #2C6269;
+$deepJungleBlue: #004047;
+$sacramentoStateGreen: #012F34;
+$darkGreen: #002529;
+
+@font-face {
+    font-family: "Livvic";
+
+    src: url("../../livvic/Livvic-Bold.ttf");
+}
+
+
+
+header {
+    // height: 700px;
+    background-color: $midNightGreen;
+    // border: 1px solid red;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    nav {
+        // margin-top: 3    em;
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ol {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .logo {
+                font-size: 2em;
+                font-weight: bold;
+
+
+            }
+
+            li:first-child {
+                margin-left: 3em;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+
+                li:not(:last-child) {
+                    margin-right: 2em;
+
+                    a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+
+        button,
+        .btn {
+            background-color: transparent;
+            border: 1px solid $white;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-size: 1em;
+
+            &:hover {
+                background-color: white !important;
+
+                a {
+                    color: black !important;
+                }
+            }
+        }
+    }
+
+    .about_group8 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .header-text {
+        // border: 1px solid red;
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: $white;
+            font-family: Livvic;
+            font-size: 3em;
+            font-weight: 700;
+            line-height: 100px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        div {
+            // border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+
+            span {
+                width: 50px;
+                height: 4px;
+                background-color: $lightCoral;
+            }
+
+            p {
+                color: $white;
+                margin-top: 3em;
+                font-family: Livvic;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 0px;
+                text-align: left;
+
+            }
+        }
+    }
+}
+
+// end header style
+
+// start main style
+main {
+    position: relative;
+    // border: 1px solid red;
+
+    section.one {
+        position: relative;
+        background-color: $deepJungleBlue;
+
+        img.about_group_8 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        img.about_diretors {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        h1 {
+            color: $white;
+            font-family: Livvic;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        .cards {
+            margin-top: 3em;
+            // border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .card {
+                position: relative;
+                background-color: #012F34;
+                // border: 1px solid blue;
+                width: 32%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                h3 {
+                    color: $raptureBlue;
+                    font-family: Livvic;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    margin-top: 1em;
+                }
+
+                em {
+                    color: $white;
+                    font-family: Livvic;
+                    font-size: 15px;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    margin-bottom: 2em;
+                }
+
+                img.icon {
+                    position: absolute;
+                    top: 85%;
+                }
+            }
+        }
+
+    }
+
+}

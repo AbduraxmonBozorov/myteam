@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Livvic";
+  src: url("../../livvic/Livvic-Bold.ttf");
+}
+header {
+  background-color: #014E56;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav ol .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+header nav ol li:first-child {
+  margin-left: 3em;
+}
+header nav ol ul {
+  list-style: none;
+  display: flex;
+}
+header nav ol ul li:not(:last-child) {
+  margin-right: 2em;
+}
+header nav ol ul li:not(:last-child) a {
+  font-size: 1em;
+}
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav button,
+header nav .btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 1em;
+}
+header nav button:hover,
+header nav .btn:hover {
+  background-color: white !important;
+}
+header nav button:hover a,
+header nav .btn:hover a {
+  color: black !important;
+}
+header .about_group8 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+header .header-text {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-text h1 {
+  color: #ffffff;
+  font-family: Livvic;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+header .header-text div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+header .header-text div span {
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+}
+header .header-text div p {
+  color: #ffffff;
+  margin-top: 3em;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+main {
+  position: relative;
+}
+main section.one {
+  position: relative;
+  background-color: #004047;
+}
+main section.one img.about_group_8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main section.one img.about_diretors {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main section.one h1 {
+  color: #ffffff;
+  font-family: Livvic;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+main section.one .cards {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section.one .cards .card {
+  position: relative;
+  background-color: #012F34;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.one .cards .card h3 {
+  color: #79C8C7;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 1em;
+}
+main section.one .cards .card em {
+  color: #ffffff;
+  font-family: Livvic;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+main section.one .cards .card img.icon {
+  position: absolute;
+  top: 85%;
+}/*# sourceMappingURL=about.css.map */

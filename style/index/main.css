@@ -1,0 +1,488 @@
+@font-face {
+  font-family: "Livvic";
+  src: url("../../livvic/Livvic-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Livvic;
+}
+
+header {
+  height: 700px;
+  background-color: #014E56;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav ol .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+header nav ol li:first-child {
+  margin-left: 3em;
+}
+header nav ol ul {
+  list-style: none;
+  display: flex;
+}
+header nav ol ul li:not(:last-child) {
+  margin-right: 2em;
+}
+header nav ol ul li:not(:last-child) a {
+  font-size: 1em;
+}
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav button,
+header nav .btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 1em;
+}
+header nav button:hover,
+header nav .btn:hover {
+  background-color: white !important;
+}
+header nav button:hover a,
+header nav .btn:hover a {
+  color: black !important;
+}
+header .combinedElem1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: -100px;
+  top: 50%;
+}
+header .combinedElem1 .oval1 {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  background-color: #012F34;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+header .combinedElem1 .oval1 .oval2 {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #014E56 0%, #014E56 50%, #79C8C7 50%, #79C8C7 100%);
+}
+header .combinedElem1 .rectangle {
+  width: inherit;
+  height: 100px;
+  background-color: #79C8C7;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+header .combinedElem1 .dots {
+  width: 53px;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-auto-flow: row;
+}
+header .combinedElem1 .dots .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #F67E7E;
+}
+header .center-text {
+  position: relative;
+  top: 35%;
+  display: flex;
+  flex-direction: row;
+}
+header .center-text section:first-child {
+  width: 50%;
+}
+header .center-text section:first-child h1 {
+  font-size: 5em;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+header .center-text section:first-child h1 span:last-child {
+  color: #F67E7E;
+}
+header .center-text section:last-child {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .center-text section:last-child span:first-child {
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+}
+header .center-text section:last-child p {
+  color: #ffffff;
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+  width: 445px;
+}
+header .bottom-elem {
+  width: 360px;
+  height: 200px;
+  position: absolute;
+  top: 85%;
+  left: 70%;
+}
+header .bottom-elem .oval1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #3e8892;
+  text-shadow: 0px 0px 10px 10px #2C6269;
+}
+header .bottom-elem .oval2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  background-image: radial-gradient(transparent 0%, transparent 30%, #F67E7E 31%, #F67E7E 100%);
+  border-radius: 50%;
+  z-index: 2;
+}
+header .bottom-elem .oval3 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  background-image: radial-gradient(#004047 0%, #004047 30%, #002529 31%, #002529 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+header .bottom-elem .lines {
+  width: 100px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .bottom-elem .lines .line {
+  width: inherit;
+  height: 4px;
+  background-color: #79C8C7;
+}
+header .bottom-elem .rectangle {
+  width: 43px;
+  height: 43px;
+  background-color: #79C8C7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+main {
+  box-sizing: border-box;
+  position: relative;
+}
+main section.one {
+  background-color: #012F34;
+  background-clip: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10em;
+  position: relative;
+}
+main section.one .one-first {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+main section.one .one-first span {
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  margin-bottom: 2em;
+}
+main section.one .one-first h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 3em;
+}
+main section.one .one-second {
+  width: 50%;
+}
+main section.one .one-second article {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+main section.one .one-second article:first-child {
+  margin-top: 5em;
+}
+main section.one .one-second article div:first-child {
+  position: relative;
+}
+main section.one .one-second article div:first-child img {
+  width: 100%;
+  width: 4em;
+  height: 4em;
+  position: relative;
+  z-index: 1;
+}
+main section.one .one-second article div:last-child {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+main section.one .one-second article div:last-child h4 {
+  color: #F67E7E;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+main section.one .one-second article div:last-child p {
+  color: #ffffff;
+  font-family: Livvic;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+main section.one .group8 {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+main section.two {
+  background-color: #004047;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+main section.two .reviews-bg-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main section.two img.reviews-bg-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main section.two h1 {
+  color: white;
+  font-size: 3em;
+  font-family: Livvic;
+  font-weight: 700;
+  text-align: center;
+}
+main section.two h1 span {
+  color: #79C8C7;
+}
+main section.two .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+}
+main section.two .cards .card {
+  box-sizing: border-box;
+  width: 33%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.two .cards .card img.qoshtirnoq {
+  position: relative;
+  top: 9%;
+  z-index: 1;
+}
+main section.two .cards .card p {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: Livvic;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 25px;
+}
+main section.two .cards .card h3 {
+  color: #79C8C7;
+  font-family: Livvic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+main section.two .cards .card em {
+  color: #ffffff;
+  font-family: Livvic;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+main section.two .cards .card img.user {
+  margin-top: 2em;
+}
+main section.three {
+  background-color: #F67E7E;
+  background-clip: border-box;
+  position: relative;
+  padding: 3em 10em !important;
+  box-sizing: border-box;
+}
+main section.three img.group8_2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+main section.three div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.three div h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Livvic;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 3em;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main section.three div button {
+  display: inline;
+  height: 100%;
+  border: 2px solid #012F34;
+  border-radius: 30px;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 7px 30px;
+  background-color: transparent;
+}
+
+footer {
+  background-color: #002529;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul li {
+  width: 50%;
+}
+footer ul li:first-child div {
+  display: flex;
+  flex-direction: column;
+}
+footer ul li:first-child div h1 a {
+  color: #ffffff;
+  font-size: 1em;
+}
+footer ul li:first-child div div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+}
+footer ul li:first-child div div a {
+  color: #ffffff;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+footer ul li:first-child div div a:last-child {
+  margin-left: 1em;
+}
+footer ul li:nth-child(2) p {
+  color: #ffffff;
+  width: 55%;
+  opacity: 0.6;
+  font-family: Livvic;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+footer ul li:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+footer ul li:last-child div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+footer ul li:last-child div img:not(:last-child) {
+  margin-right: 1em;
+}
+footer ul li:last-child p {
+  color: #ffffff;
+  font-family: Livvic;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: right;
+  opacity: 0.6;
+  margin-top: 3em;
+}/*# sourceMappingURL=main.css.map */

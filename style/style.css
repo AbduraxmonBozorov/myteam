@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Livvic";
+    src: url("./livvic/Livvic-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 5em 10rem;
+}
