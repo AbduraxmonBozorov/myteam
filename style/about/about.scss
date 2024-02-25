@@ -188,6 +188,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 2em;
 
 
                 h3 {
@@ -215,11 +216,209 @@ main {
 
                 img.icon {
                     position: absolute;
-                    top: 85%;
+                    top: 89%;
                 }
             }
+
         }
+
+        padding-bottom: 10em;
 
     }
 
+    // end section one style
+
+    // start section two
+
+    section.two {
+        background-color: $sacramentoStateGreen;
+        position: relative;
+
+        img.client-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        h1 {
+            color: $white;
+            font-family: Livvic;
+            font-size: 3em;
+            font-weight: 700;
+            line-height: 3em;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-top: 1em;
+
+        }
+
+        div {
+            // border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+    }
+
+    // end section three style
+    // start sction three style
+
+    section.three {
+        background-color: $lightCoral;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        div {
+            // border: 1px solid red;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                color: $darkGreen;
+                font-family: Livvic;
+                font-size: 3em;
+                font-weight: 700;
+                line-height: 3em;
+                letter-spacing: 0px;
+                text-align: left;
+                padding: 0;
+                margin: 0;
+            }
+
+            button {
+                background-color: transparent;
+                border: 2px solid $darkGreen;
+                border-radius: 30px;
+                padding: 8px 30px;
+                font-family: Livvic;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 0px;
+                text-align: left;
+                height: 100%;
+
+                &:hover {
+                    background-color: white;
+                    color: $darkGreen;
+                }
+            }
+        }
+    }
+// end section three
+
 }
+
+// end main
+
+// start footer
+
+footer {
+    background-color: $darkGreen;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            // border: 1px solid red;
+            width: 50%;
+
+            &:first-child {
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        a {
+                            color: $white;
+                            font-size: 1em;
+                        }
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 2em;
+
+                        a {
+                            color: $white;
+                            font-family: Livvic;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            letter-spacing: 0px;
+                            text-align: left;
+
+                            &:last-child {
+                                margin-left: 1em;
+                            }
+
+                        }
+
+
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                p {
+                    color: $white;
+                    width: 55%;
+                    opacity: .6;
+                    font-family: Livvic;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    text-align: left;
+
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                height: 100%;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    img:not(:last-child) {
+                        margin-right: 1em;
+                    }
+                }
+
+                p {
+                    color: $white;
+                    font-family: Livvic;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    text-align: right;
+                    opacity: .6;
+                    margin-top: 3em;
+                }
+            }
+        }
+    }
+}
+
