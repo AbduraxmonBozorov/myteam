@@ -1,0 +1,371 @@
+$midNightGreen: #014E56;
+$lightCoral: #F67E7E;
+$white: #ffffff;
+$raptureBlue: #79C8C7;
+$policeBlue: #2C6269;
+$deepJungleBlue: #004047;
+$sacramentoStateGreen: #012F34;
+$darkGreen: #002529;
+
+@font-face {
+    font-family: "Livvic";
+
+    src: url("../../livvic/Livvic-Bold.ttf");
+}
+
+// start header
+header {
+    // height: 700px;
+    background-color: $midNightGreen;
+    // border: 1px solid red;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    nav {
+        // margin-top: 3    em;
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ol {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .logo {
+                font-size: 2em;
+                font-weight: bold;
+
+
+            }
+
+            li:first-child {
+                margin-left: 3em;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+
+                li:not(:last-child) {
+                    margin-right: 2em;
+
+                    a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+
+        button,
+        .btn {
+            background-color: transparent;
+            border: 1px solid $white;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-size: 1em;
+
+            &:hover {
+                background-color: white !important;
+
+                a {
+                    color: black !important;
+                }
+            }
+        }
+    }
+
+    .about_group8 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .header-text {
+        // border: 1px solid red;
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: $white;
+            font-family: Livvic;
+            font-size: 3em;
+            font-weight: 700;
+            line-height: 100px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        div {
+            // border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+
+            span {
+                width: 50px;
+                height: 4px;
+                background-color: $lightCoral;
+            }
+
+            p {
+                color: $white;
+                margin-top: 3em;
+                font-family: Livvic;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 0px;
+                text-align: left;
+
+            }
+        }
+    }
+}
+
+// end header sytle
+
+// start main stayle
+main {
+    background-color: #014E56;
+    position: relative;
+
+
+
+    section.contact {
+        position: relative;
+        top: 0;
+        width: 100%;
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img.img1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        img.img2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        div.contact-left {
+            // border: 1px solid red;
+            // width: 55%   ;
+            display: inline-block;
+
+            h1 {
+                color: $white;
+                font-family: Livvic;
+                font-size: 4em;
+                font-weight: 700;
+                line-height: 100px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+
+            p {
+                color: $lightCoral;
+                font-family: Livvic;
+                font-size: 2em;
+                font-weight: 700;
+                line-height: 3em;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+
+            article {
+                // border: 1px solid blue;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+
+                p {
+                    color: $white;
+                    font-family: Livvic;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    margin-left: 1em;
+
+                }
+
+                &:nth-child(2) {
+                    border: 1px solid red;
+                }
+            }
+        }
+
+        // end contact-left style
+
+        // start form style
+        form {
+            // border: 1px solid red;
+            // display: blo;
+            width: 50%;
+            padding: 2em;
+
+            input {
+                // border: none;
+                background-color: transparent;
+                width: 100%;
+                padding: 0.5em;
+                border: none;
+                border-bottom: 1px solid $white;
+                color: $white;
+                margin-bottom: 2em;
+                // opacity: .6;
+
+                &::placeholder {
+                    color: white;
+                    opacity: .6;
+                }
+            }
+
+            textarea {
+                // border: none;
+                background-color: transparent;
+                width: 100%;
+                padding: 0.5em;
+                border: none;
+                border-bottom: 1px solid $white;
+                color: $white;
+                margin-bottom: 2em;
+                // opacity: .6;
+
+                &::placeholder {
+                    color: white;
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+// end main style
+
+footer {
+    background-color: $darkGreen;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        li {
+            // border: 1px solid red;
+            width: 50%;
+
+            &:first-child {
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        a {
+                            color: $white;
+                            font-size: 1em;
+                        }
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 2em;
+
+                        a {
+                            color: $white;
+                            font-family: Livvic;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            letter-spacing: 0px;
+                            text-align: left;
+
+                            &:last-child {
+                                margin-left: 1em;
+                            }
+
+                        }
+
+
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                p {
+                    color: $white;
+                    width: 55%;
+                    opacity: .6;
+                    font-family: Livvic;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    text-align: left;
+
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                height: 100%;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    img:not(:last-child) {
+                        margin-right: 1em;
+                    }
+                }
+
+                p {
+                    color: $white;
+                    font-family: Livvic;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    text-align: right;
+                    opacity: .6;
+                    margin-top: 3em;
+                }
+            }
+        }
+    }
+}
+
+// end footer 
